@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read Js || Ghost Code Night</title>
+</head>
+<body>
+    <div id="app"></div>
+
+    <script src="view/userReadView.js"></script>
+    <script src="controller/userReadController.js"></script>
+    <script src="model/userReadModel.js"></script>
+
+    <script>
+        const model = new UserModel();
+        const view = new UserView();
+        const controller = new UserController(model, view);
+    </script>
+</body>
+</html>
